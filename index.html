@@ -5,21 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </head>
 
-<head>
-<body class="ui">
-    <div class="ui green inverted segment">
-        <div class="ui green inverted menu">
+<body>
 
+    <div class="ui grid">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui menu">
+                    <a class="item" href="index.html">
+                        <img class="ui rounded image"
+                            src="https://upload.wikimedia.org/wikipedia/th/a/a4/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89.jpg"
+                            width="120"></a>
+
+                    <a class="item" href="index2.html">
+                        เกี่ยวกับมหาวิทยาลัย
+                    </a>
+
+                    <a class="item" href="index3.html">
+                        หน่วยงาน
+                    </a>
+                    <a class="item">
+                        การศึกษา
+                    </a>
+                    <a class="item" href="index4.html">
+                        วิจัยและบริหารวิชาการ
+                    </a>
+                    <a class="item" href="index5.html">
+                        รอบรั้วมหาวิทยาลัย
+                    </a>
+
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="ค้นหา...">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ui pushable segment">
+        <div class="ui sidebar vertical menu">
             <a class="item" href="index.html">
-            <img class="ui rounded image"
-                src="https://upload.wikimedia.org/wikipedia/th/a/a4/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89.jpg"
-                width="160"></a>
+                <img class="ui rounded image"
+                    src="https://upload.wikimedia.org/wikipedia/th/a/a4/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89.jpg"
+                    width="120"></a>
 
-            <a class="item" href="index2.html">   
-            เกี่ยวกับมหาวิทยาลัย
+            <a class="item" href="index2.html">
+                เกี่ยวกับมหาวิทยาลัย
             </a>
 
             <a class="item" href="index3.html">
@@ -38,12 +83,10 @@
             <div class="ui icon input">
                 <input class="prompt" type="text" placeholder="ค้นหา...">
                 <i class="search icon"></i>
-
             </div>
         </div>
-    </div>
 
-    <head>
+<head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             * {
@@ -262,11 +305,9 @@
 
 
         <div class="ui grid container">
-            
             <div class="ui olive inverted vertical pointing menu four wide column">
-            
-                <font color="green">MJU LINKS</font>
 
+                <font color="green">MJU LINKS</font>
                 <img class="ui rounded image" src="https://www.mju.ac.th/main/images2015/green-university.png"
                     width="200">
                 <img class="ui rounded image" src="https://www.mju.ac.th/main/images2015/nacc-banner3.png" width="200">
@@ -308,11 +349,11 @@
                 </a>
             </div>
 
-            
+
             <div class="ui grey items">
                 <div class="ui button header item">
                     EVENT
-                  </div>
+                </div>
                 <div class="item">
                     <div class="ui small image">
                         <img src="https://erp.mju.ac.th/picture/information/eb5bfcd3f4354ede80f695d6104782dbs.jpg">
@@ -358,38 +399,48 @@
                         แลกเปลี่ยนการดูแลตนเองด้วยอาหารการกิจสมุนไพรท้องถิ่น
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
 
         <div class="ui container horizontal segments">
-            
+
             <div class="ui segment">
-              
+
                 <img class="ui small image" src="https://www.flaticon.com/svg/static/icons/svg/87/87386.svg">
                 <img class="ui small image" src="https://www.flaticon.com/svg/static/icons/svg/747/747374.svg">
                 <img class="ui small image" src="https://www.flaticon.com/svg/static/icons/svg/733/733646.svg">
                 <img class="ui small image" src="https://www.flaticon.com/svg/static/icons/svg/1384/1384031.svg">
-              
-            </div>
-            <div class="ui segment">
-              <p>
-                หน้าหลัก	เกี่ยวกับมหาวิทยาลัย | หน่วยงาน | การศึกษา | วิจัยและบริการวิชาการ | รอบรั้วมหาวิทยาลัย | Q & A
-                ข่าว	ข่าวกิจกรรม | ข่าวประกาศทั่วไป | ข่าวรับสมัครงาน | ข่าวประกวดราคา
-                วิทยาเขต	มหาวิทยาลัยแม่โจ้ - แพร่เฉลิมพระเกียรติ | มหาวิทยาลัยแม่โจ้ - ชุมพร
-                สื่อออนไลน์	MJU CHANNEL | MJU Radio
-                ที่พัก สัมมนา	ศูนย์การศึกษาและฝึกอบรมนานาชาติ
-                Maejo Int. J. Sci Maejo International Journal of Science and Technology
-              </p>
-            </div>
-            <div class="ui segment">
-              <p>
-                มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
-                โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU Map แผนที่มหาวิทยาลัย
-                
-              </p>
-            </div>
-          </div>
 
+            </div>
+            <div class="ui segment">
+                <p>
+                    หน้าหลัก เกี่ยวกับมหาวิทยาลัย | หน่วยงาน | การศึกษา | วิจัยและบริการวิชาการ | รอบรั้วมหาวิทยาลัย
+                    | Q & A
+                    ข่าว ข่าวกิจกรรม | ข่าวประกาศทั่วไป | ข่าวรับสมัครงาน | ข่าวประกวดราคา
+                    วิทยาเขต มหาวิทยาลัยแม่โจ้ - แพร่เฉลิมพระเกียรติ | มหาวิทยาลัยแม่โจ้ - ชุมพร
+                    สื่อออนไลน์ MJU CHANNEL | MJU Radio
+                    ที่พัก สัมมนา ศูนย์การศึกษาและฝึกอบรมนานาชาติ
+                    Maejo Int. J. Sci Maejo International Journal of Science and Technology
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+                    โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU Map แผนที่มหาวิทยาลัย
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    
     </body>
-</head>
+
 </html>
+<script>
+    $('.ui.sidebar').sidebar({
+        context: $('.ui.pushable.segment'),
+        transition: 'overlay'
+    }).sidebar('attach events', '#mobile_item');
+</script>

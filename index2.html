@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
 
 <head>
 
-<body class="ui">
-    <div class="ui green inverted segment">
-        <div class="ui green inverted menu">
+    <div class="ui grid">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui menu">
+                    <a class="item" href="index.html">
+                        <img class="ui rounded image"
+                            src="https://upload.wikimedia.org/wikipedia/th/a/a4/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89.jpg"
+                            width="120"></a>
 
+                    <a class="item" href="index2.html">
+                        เกี่ยวกับมหาวิทยาลัย
+                    </a>
+
+                    <a class="item" href="index3.html">
+                        หน่วยงาน
+                    </a>
+                    <a class="item">
+                        การศึกษา
+                    </a>
+                    <a class="item" href="index4.html">
+                        วิจัยและบริหารวิชาการ
+                    </a>
+                    <a class="item" href="index5.html">
+                        รอบรั้วมหาวิทยาลัย
+                    </a>
+
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="ค้นหา...">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ui pushable segment">
+        <div class="ui sidebar vertical menu">
             <a class="item" href="index.html">
-            <img class="ui rounded image"
-                src="https://upload.wikimedia.org/wikipedia/th/a/a4/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89.jpg"
-                width="160">
+                <img class="ui rounded image"
+                    src="https://upload.wikimedia.org/wikipedia/th/a/a4/%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89.jpg"
+                    width="120"></a>
+
+            <a class="item" href="index2.html">
+                เกี่ยวกับมหาวิทยาลัย
             </a>
 
-            <a class="item" href="index2.html">   
-                เกี่ยวกับมหาวิทยาลัย
-                </a>
-    
-                <a class="item" href="index3.html">
-                    หน่วยงาน
-                </a>
-                <a class="item">
-                    การศึกษา
-                </a>
-                <a class="item" href="index4.html">
-                    วิจัยและบริหารวิชาการ
-                </a>
-                <a class="item" href="index5.html">
-                    รอบรั้วมหาวิทยาลัย
-                </a>
+            <a class="item" href="index3.html">
+                หน่วยงาน
+            </a>
+            <a class="item">
+                การศึกษา
+            </a>
+            <a class="item" href="index4.html">
+                วิจัยและบริหารวิชาการ
+            </a>
+            <a class="item" href="index5.html">
+                รอบรั้วมหาวิทยาลัย
+            </a>
 
             <div class="ui icon input">
                 <input class="prompt" type="text" placeholder="ค้นหา...">
                 <i class="search icon"></i>
-
             </div>
         </div>
-    </div>
 
     <div class="ui grid container">
 
@@ -122,3 +163,10 @@
           </div>
         </div>
 </body>
+
+<script>
+    $('.ui.sidebar').sidebar({
+        context: $('.ui.pushable.segment'),
+        transition: 'overlay'
+    }).sidebar('attach events', '#mobile_item');
+</script>
